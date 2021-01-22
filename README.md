@@ -1,4 +1,4 @@
-# PassageWay_Github_Version
+# PassageWay_GithubVersion
 
 Code for picture manipulating web application I created.  Application used to be hosted at Passageway-app.com but has been taken down due to AWS fees.  Application can still run locally using flask run.
 
