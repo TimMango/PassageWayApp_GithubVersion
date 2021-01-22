@@ -15,3 +15,4 @@ Screenshots of the application and an edited photo example are shown below.
 ![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo5.png)
 ![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo6.png)
 ![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo7.png)
+![Example Product](https://github.com/TimMango/PassageWayApp_GithubVersion/blob/main/Website_Photos/JFKpassageway.jpg)
