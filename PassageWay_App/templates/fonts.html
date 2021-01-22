@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+</style>
+
+<body style="background-color: #2B547E;"></body>
+     <div>
+         <img src= {{ url_for('static', filename='Font_Images/Fonts_page1.jpg')}}>
+         <img src= {{ url_for('static', filename='Font_Images/Fonts_page2.jpg')}}>
+         <img src= {{ url_for('static', filename='Font_Images/Fonts_page3.jpg')}}>
+     </div>
+</body>   
+{% endblock %}    

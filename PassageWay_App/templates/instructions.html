@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+      window._mNHandle = window._mNHandle || {};
+      window._mNHandle.queue = window._mNHandle.queue || [];
+      medianet_versionId = "3121199";
+     </script>
+  <script src="https://contextual.media.net/dmedianet.js?cid=8CU3EK733" async="async"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+        body  {
+          background-image: url("{{ url_for('static', filename='Background_Images/diagoona-bg-2.jpg')}}");
+          background-color: #cccccc;
+        }
+</style>
+
+<style>
+        div.absolute {
+          position: absolute;
+          top: 200px;
+          left: 75px;
+          text-align:center;
+          color:white;
+        }
+</style>
+
+<div class="absolute">
+        <h2>Background</h2>
+        <pre style="color: white; font-size:16px"> 
+         PassageWay is an interactive web application for styling images. PassageWay uses a quote or text input and an image
+         as the foundation for design. With a selection of over 400 fonts and thousands of font color choices, PassageWay offers 
+         endless design opportunities. Passageway accesses Flikr's open photo library and Wikiquote to create designs.
+        </pre>
+
+        <h2>Navigation</h2>
+        <pre style="color: white; font-size:16px"">
+        There are six pieces of information needed to create a new Image.  Be sure to click the submit button for each input.
+
+        1) Image search from home page
+        2) See images from Gallery
+        3) Select image, font style, and font color on Select page, hit submit for each individually
+        4) Select coordinates, font size, and quote text on Edit page, hit submit for each individually
+        5) Create Image on Edit page
+        6) Recreate Image by changing any of the inputs
+        
+        Image Download: You can download the image by right clicking on it
+        </pre>
+
+
+        <br>
+ </div>
+
+
+<style>
+.box-transparent {
+    position: absolute;
+    top: 150px;
+    left: 125px;
+    width: 1200px;
+    height: 550px;
+    background-color: rgba(43, 84, 126, 0.6);
+    z-index: -1;
+}
+.text
+    {
+        font-family: Garamond, serif;
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.0);
+        z-index: -1;
+    }
+</style>
+
+<div class="box-transparent">
+        <div class="text">
+        <p>blah</p>
+        </div>
+</div>
+{% endblock %}

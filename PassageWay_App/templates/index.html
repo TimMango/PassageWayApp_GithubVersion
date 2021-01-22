@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+      window._mNHandle = window._mNHandle || {};
+      window._mNHandle.queue = window._mNHandle.queue || [];
+      medianet_versionId = "3121199";
+     </script>
+  <script src="https://contextual.media.net/dmedianet.js?cid=8CU3EK733" async="async"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+        body  {
+          background-image: url("{{ url_for('static', filename='Background_Images/diagoona-bg-2.jpg')}}");
+          background-color: #cccccc;
+        }
+</style>
+
+<style>  
+.title {
+  position: absolute;
+  text-align:center;
+  top: 250px;
+  left: 450px;
+  width: 600px;
+  color:white;
+        }
+</style>
+
+<div id="530942823">
+    <script type="text/javascript">
+        try {
+            window._mNHandle.queue.push(function (){
+                window._mNDetails.loadTag("530942823", "970x90", "530942823");
+            });
+        }
+        catch (error) {}
+    </script>
+</div>
+
+<div class="title">
+        <h1> Welcome to PassageWay</h1>
+        <p>To get started search for an Image</p>
+        <br>
+ </div>
+
+<style>
+
+.column-left {
+	position: absolute;
+  text-align:center;
+	top: 375px;
+	left: 200px;
+	width: 600px;
+}
+.column-right {
+	position: absolute;
+  text-align:center;
+	top: 375px;
+	left: 650px;
+	width: 600px;
+}
+</style>
+    <div class="column-left">
+          <h2 style="color:white;">Click for Popular Search Tags</h2>
+            <form action="/popular_tags" method="POST">
+                <input type="submit" name="open" value="Show Popular Tags">
+                <input type="submit" name="close" value="Close">
+            </form>
+            <p style="color:white;">{{ tags_printed }}
+            </p>
+       </div>
+       <div class="column-right">
+          <form action="/image_search" method="POST">
+              <h2 style="color:white;">Search for an Image</h2>
+              <input type="text" name="Item_2" class="search-field tags"
+              placeholder="text">
+              <button class="submit" type="submit">Search</button>
+          </form>
+       </div>
+
+<style>
+.box-transparent {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 1100px;
+    height: 500px;
+    background-color: rgba(43, 84, 126, 0.6);
+    z-index: -1;
+}
+.text
+    {
+        font-family: Garamond, serif;
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.0);
+        z-index: -1;
+    }
+</style>
+
+<div class="box-transparent">
+        <div class="text">
+        <p>blah</p>
+        </div>
+</div>
+
+{% endblock %}

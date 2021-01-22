@@ -1,0 +1,606 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+
+<head>
+        <script type="text/javascript">
+          window._mNHandle = window._mNHandle || {};
+          window._mNHandle.queue = window._mNHandle.queue || [];
+          medianet_versionId = "3121199";
+         </script>
+      <script src="https://contextual.media.net/dmedianet.js?cid=8CU3EK733" async="async"></script>
+ </head>
+
+ <div id="530942823">
+    <script type="text/javascript">
+        try {
+            window._mNHandle.queue.push(function (){
+                window._mNDetails.loadTag("530942823", "970x90", "530942823");
+            });
+        }
+        catch (error) {}
+    </script>
+</div>
+
+<style>
+        .box-transparent {
+            position: absolute;
+            top: 25px;
+            left: 300px;
+            width: 900px;
+            height: 1900px;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+        .text
+            {
+                font-family: Garamond, serif;
+                font-size: 50px;
+                color: rgba(0, 0, 0, 0.0);
+                z-index: -1;
+            }
+</style>
+        
+<div class="box-transparent">
+        <div class="text">
+        <p>blah</p>
+        </div>
+</div>
+
+<body style="background-color: rgb(65, 128, 190, 1);"> <br> <br> </body>
+
+<style>
+* {box-sizing: border-box;}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 300px; /* Should be removed. Only for demonstration */
+  color:Blue;
+  text-shadow: white 0px 0px 3px;
+  text-align:center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+<style type="text/css">
+.bg1img {
+    background-image: url("{{ url_for('static', filename='Background_Images/forrest_fog.jpg')}}");
+    height: 350px;
+}
+</style>
+<style type="text/css">
+    .bg2img {
+        background-image: url("{{ url_for('static', filename='Background_Images/Mountain_Cloud.jpg')}}");
+        height: 350px;
+    }
+</style>
+<style type="text/css">
+    .bg3img {
+        background-image: url("{{ url_for('static', filename='Background_Images/three_mountains.jpg')}}");
+        height: 350px;
+    }
+</style>
+
+<div class="row">
+    <div class="column" style="padding-left: 15px;">
+        <div class="bg1img">
+            <br><br><br> 
+            <h2>Select an Image</h2>
+            <h5>Images are numbered in the gallery</h5>
+            <form action="/image_download" method="POST">
+                <select name="Font1">
+                <option value="0">Image 1</option>
+                <option value="1">Image 2</option>
+                <option value="2">Image 3</option>
+                <option value="3">Image 4</option>
+                <option value="4">Image 5</option>
+                <option value="5">Image 6</option>
+                <option value="6">Image 7</option>
+                <option value="7">Image 8</option>
+                <option value="8">Image 9</option>
+                <option value="9">Image 10</option>
+                <option value="10">Image 11</option>
+                <option value="11">Image 12</option>
+                <option value="12">Image 13</option>
+                <option value="13">Image 14</option>
+                <option value="14">Image 15</option>
+                </select>
+                <br><br>
+                <button class="submit" type="submit">Submit Image</button>
+            </form>
+            <br>
+            <h5>Current Image: {{ image_file }}</h5>
+        </div>     
+    </div>
+    <div class="column" style="background-color:#2B547E;">
+        <div class="bg2img">
+            <br><br><br>
+            <h2>Select a Font Style</h2>
+            <form action="/font_style" method="POST">
+                <select name="Font_Style">
+                    <option value="8bitlim.ttf">8bitlim</option>
+                    <option value="11S0BLTI.TTF">11S0BLTI</option>
+                    <option value="12tonsushi.ttf">12tonsushi</option>
+                    <option value="Aaargh.ttf">Aaargh</option>
+                    <option value="ABBERANC.TTF">ABBERANC</option>
+                    <option value="ABEAKRG.TTF">ABEAKRG</option>
+                    <option value="absci___.ttf">absci___</option>
+                    <option value="abscib__.ttf">abscib__</option>
+                    <option value="accid__.ttf">accid__</option>
+                    <option value="Action Man Bold.ttf">Action Man Bold</option>
+                    <option value="Action_Force.ttf">Action_Force</option>
+                    <option value="ADD-JAZZ.TTF">ADD-JAZZ</option>
+                    <option value="AdineKirnberg-Script.ttf">AdineKirnberg-Script</option>
+                    <option value="AdobeGothicStd-Bold.otf">AdobeGothicStd-Bold</option>
+                    <option value="AdobeHeitiStd-Regular.otf">AdobeHeitiStd-Regular</option>
+                    <option value="advent-Lt1.otf">advent-Lt1</option>
+                    <option value="advent-Lt3.otf">advent-Lt3</option>
+                    <option value="advent-Re.otf">advent-Re</option>
+                    <option value="Adventure.ttf">Adventure</option>
+                    <option value="Advokat Modern.ttf">Advokat Modern</option>
+                    <option value="Aerovias Brasil NF.ttf">Aerovias Brasil NF</option>
+                    <option value="aggstock.ttf">aggstock</option>
+                    <option value="Aileenation.ttf">Aileenation</option>
+                    <option value="AIR_____.TTF">AIR_____</option>
+                    <option value="AldotheApache.ttf">AldotheApache</option>
+                    <option value="ALEXA.TTF">ALEXA</option>
+                    <option value="Alice and the Wicked Monster.ttf">Alice and the Wicked Monster</option>
+                    <option value="ALIEES__.TTF">ALIEES__</option>
+                    <option value="ALIEESB_.TTF">ALIEESB_</option>
+                    <option value="ALIEESBI.TTF">ALIEESBI</option>
+                    <option value="ALIEESI_.TTF">ALIEESI_</option>
+                    <option value="ALIEN5.TTF">ALIEN5</option>
+                    <option value="Aliquam.ttf">Aliquam</option>
+                    <option value="AliquamREG.ttf">AliquamREG</option>
+                    <option value="AliquamRit.ttf">AliquamRit</option>
+                    <option value="Aliquamulti.ttf">Aliquamulti</option>
+                    <option value="AllCaps.ttf">AllCaps</option>
+                    <option value="Alpha Thin.ttf">Alpha Thin</option>
+                    <option value="AmazOOSTROVFine.ttf">AmazOOSTROVFine</option>
+                    <option value="American Captain.ttf">American Captain</option>
+                    <option value="Anabelle Script Light.otf">Anabelle Script Light</option>
+                    <option value="Ancillary-Bold.otf">Ancillary-Bold</option>
+                    <option value="ANDOVER_.TTF">ANDOVER_</option>
+                    <option value="AnkeHand.ttf">AnkeHand</option>
+                    <option value="annifont.ttf">annifont</option>
+                    <option value="ap.ttf">ap</option>
+                    <option value="ARCHBLC_.TTF">ARCHBLC_</option>
+                    <option value="arialbd.ttf">arialbd</option>
+                    <option value="ARMOPB__.TTF">ARMOPB__</option>
+                    <option value="Artbrush.ttf">Artbrush</option>
+                    <option value="Atlantic_Cruise-Demo.ttf">Atlantic_Cruise-Demo</option>
+                    <option value="ATOMIC__.TTF">ATOMIC__</option>
+                    <option value="ATROX.TTF">ATROX</option>
+                    <option value="autobahn.ttf">autobahn</option>
+                    <option value="AVENGEANCE MIGHTIEST AVENGER.otf">AVENGEANCE MIGHTIEST AVENGER</option>
+                    <option value="AZRAEL__.TTF">AZRAEL__</option>
+                    <option value="BabelSans-Bold.ttf">BabelSans-Bold</option>
+                    <option value="BabelSans-BoldOblique.ttf">BabelSans-BoldOblique</option>
+                    <option value="BabelSans-Oblique.ttf">BabelSans-Oblique</option>
+                    <option value="BabelSans.ttf">BabelSans</option>
+                    <option value="Backpack_PersonalUse.ttf">Backpack_PersonalUse</option>
+                    <option value="BADABB__.TTF">BADABB__</option>
+                    <option value="BankGothic-Regular DB.ttf">BankGothic-Regular DB</option>
+                    <option value="BankGothic-Regular.ttf">BankGothic-Regular</option>
+                    <option value="basictitlefont.ttf">basictitlefont</option>
+                    <option value="BastardusSans.ttf">BastardusSans</option>
+                    <option value="Battleground.ttf">Battleground</option>
+                    <option value="BAUERG__.TTF">BAUERG__</option>
+                    <option value="BEBAS___.TTF">BEBAS___</option>
+                    <option value="BEBAS__.TTF">BEBAS__</option>
+                    <option value="BEBAS.TTF">BEBAS</option>
+                    <option value="BebasKai-Regular.otf">BebasKai-Regular</option>
+                    <option value="BebasNeue.otf">BebasNeue</option>
+                    <option value="BEDOUIN.otf">BEDOUIN</option>
+                    <option value="belizarius.ttf">belizarius</option>
+                    <option value="BENNB___.TTF">BENNB___</option>
+                    <option value="big_noodle_titling_oblique.ttf">big_noodle_titling_oblique</option>
+                    <option value="big_noodle_titling.ttf">big_noodle_titling</option>
+                    <option value="black.ttf">black</option>
+                    <option value="Blacklisted.ttf">Blacklisted</option>
+                    <option value="BLACKOUT.TTF">BLACKOUT</option>
+                    <option value="Blacksword.otf">Blacksword</option>
+                    <option value="BLOODY.TTF">BLOODY</option>
+                    <option value="bluebold.ttf">bluebold</option>
+                    <option value="bluecond.ttf">bluecond</option>
+                    <option value="BLUEHIGD.TTF">BLUEHIGD</option>
+                    <option value="bluehigh.ttf">bluehigh</option>
+                    <option value="BNMachine.ttf">BNMachine</option>
+                    <option value="bobcaygr.ttf">bobcaygr</option>
+                    <option value="bold.ttf">bold</option>
+                    <option value="BOLIDEMF.TTF">BOLIDEMF</option>
+                    <option value="BOMBARD_.otf">BOMBARD_</option>
+                    <option value="Bombing.ttf">Bombing</option>
+                    <option value="boston.ttf">boston</option>
+                    <option value="bottix.ttf">bottix</option>
+                    <option value="BOTTRBB_.TTF">BOTTRBB_</option>
+                    <option value="BOTTRBRG.TTF">BOTTRBRG</option>
+                    <option value="bradybun.ttf">bradybun</option>
+                    <option value="bronic.ttf">bronic</option>
+                    <option value="BRUSHCUT.TTF">BRUSHCUT</option>
+                    <option value="Brushstrike trial.ttf">Brushstrike trial</option>
+                    <option value="BUBBLEBO.TTF">BUBBLEBO</option>
+                    <option value="budeasym.ttf">budeasym</option>
+                    <option value="Buran USSR_0.ttf">Buran USSR_0</option>
+                    <option value="Buran USSR.ttf">Buran USSR</option>
+                    <option value="Call of Ops Duty.otf">Call of Ops Duty</option>
+                    <option value="cartoonist_kooky.ttf">cartoonist_kooky</option>
+                    <option value="cartwheel.otf">cartwheel</option>
+                    <option value="Casual Hardcore.otf">Casual Hardcore</option>
+                    <option value="Champagne & Limousines Bold.ttf">Champagne & Limousines Bold</option>
+                    <option value="charbb_reg.ttf">charbb_reg</option>
+                    <option value="CHERI___.TTF">CHERI___</option>
+                    <option value="CHICM___.TTF">CHICM___</option>
+                    <option value="CHICSA__.TTF">CHICSA__</option>
+                    <option value="chinese rocks rg.ttf">chinese rocks rg</option>
+                    <option value="CHINESER.ttf">CHINESER</option>
+                    <option value="CHINESETAKEAWAY.ttf">CHINESETAKEAWAY</option>
+                    <option value="ClearLine_PERSONAL_USE_ONLY.ttf">ClearLine_PERSONAL_USE_ONLY</option>
+                    <option value="CODE Bold.otf">CODE Bold</option>
+                    <option value="CODE Light.otf">CODE Light</option>
+                    <option value="Colors Of Autumn.ttf">Colors Of Autumn</option>
+                    <option value="COMEN___.TTF">COMEN___</option>
+                    <option value="COMEP___.TTF">COMEP___</option>
+                    <option value="Comic Book.ttf">Comic Book</option>
+                    <option value="Comicv2b.ttf">Comicv2b</option>
+                    <option value="Comicv2bi.ttf">Comicv2bi</option>
+                    <option value="Comicv2c.ttf">Comicv2c</option>
+                    <option value="coolvetica rg.ttf">coolvetica rg</option>
+                    <option value="Copper Canyon WBW.ttf">Copper Canyon WBW</option>
+                    <option value="corbel.ttf">corbel</option>
+                    <option value="corbelb.ttf">corbelb</option>
+                    <option value="corbeli.ttf">corbeli</option>
+                    <option value="corbelz.ttf">corbelz</option>
+                    <option value="couture-bld.otf">couture-bld</option>
+                    <option value="COUTURE-Bold.ttf">COUTURE-Bold</option>
+                    <option value="CREABBB_.TTF">CREABBB_</option>
+                    <option value="CREABBRG.TTF">CREABBRG</option>
+                    <option value="Crimes Times Six.ttf">Crimes Times Six</option>
+                    <option value="criticized.ttf">criticized</option>
+                    <option value="DAELC___.TTF">DAELC___</option>
+                    <option value="Dark Ministry.ttf">Dark Ministry</option>
+                    <option value="DarkWaters-Regular.otf">DarkWaters-Regular</option>
+                    <option value="DEADJIM.TTF">DEADJIM</option>
+                    <option value="Deadly Inked.ttf">Deadly Inked</option>
+                    <option value="deathrattlebb_reg.ttf">deathrattlebb_reg</option>
+                    <option value="Delicious-Bold.otf">Delicious-Bold</option>
+                    <option value="Delicious-BoldItalic.otf">Delicious-BoldItalic</option>
+                    <option value="Delicious-Heavy.otf">Delicious-Heavy</option>
+                    <option value="Delicious-Italic.otf">Delicious-Italic</option>
+                    <option value="Delicious-Roman.otf">Delicious-Roman</option>
+                    <option value="DHF Story Brush.ttf">DHF Story Brush</option>
+                    <option value="Diavlo_BLACK_II.otf">Diavlo_BLACK_II</option>
+                    <option value="Diavlo_BOLD_II.otf">Diavlo_BOLD_II</option>
+                    <option value="Diavlo_BOOK_II.otf">Diavlo_BOOK_II</option>
+                    <option value="Diavlo_LIGHT_II.otf">Diavlo_LIGHT_II</option>
+                    <option value="Diavlo_MEDIUM_II.otf">Diavlo_MEDIUM_II</option>
+                    <option value="DIMITRI_.TTF">DIMITRI_</option>
+                    <option value="distortion_of_the_brain_and_mind.ttf">distortion_of_the_brain_and_mind</option>
+                    <option value="DistTh__.ttf">DistTh__</option>
+                    <option value="DJ5CTRIAL.otf">DJ5CTRIAL</option>
+                    <option value="djcourag.ttf">djcourag</option>
+                    <option value="DK Face Your Fears.ttf">DK Face Your Fears</option>
+                    <option value="edo.ttf">edo</option>
+                    <option value="Elkwood - Free.otf">Elkwood - Free</option>
+                    <option value="engebold.ttf">engebold</option>
+                    <option value="Existence-Light.otf">Existence-Light</option>
+                    <option value="Exo-Black.otf">Exo-Black</option>
+                    <option value="Exo-Medium.otf">Exo-Medium</option>
+                    <option value="FAKEP___.TTF">FAKEP___</option>
+                    <option value="FAREWELL.TTF">FAREWELL</option>
+                    <option value="Florsn02.ttf">Florsn02</option>
+                    <option value="FONT.TTF">FONT</option>
+                    <option value="Forque.ttf">Forque</option>
+                    <option value="Freshman.ttf">Freshman</option>
+                    <option value="Friday13v12.ttf">Friday13v12</option>
+                    <option value="FUNDR___.TTF">FUNDR___</option>
+                    <option value="Gabba_All_Caps.otf">Gabba_All_Caps</option>
+                    <option value="gadugib.ttf">gadugib</option>
+                    <option value="glasket500.otf">glasket500</option>
+                    <option value="GOLONG.TTF">GOLONG</option>
+                    <option value="Gotham Nights.ttf">Gotham Nights</option>
+                    <option value="GROBOLD_0.TTF">GROBOLD_0</option>
+                    <option value="GrutchGrotesk-CondensedLight.ttf">GrutchGrotesk-CondensedLight</option>
+                    <option value="HACKED.ttf">HACKED</option>
+                    <option value="Harabara.ttf">Harabara</option>
+                    <option value="hawkmooncondital.ttf">hawkmooncondital</option>
+                    <option value="HEADOH_.TTF">HEADOH_</option>
+                    <option value="helsinki.ttf">helsinki</option>
+                    <option value="HONEJ___.ttf">HONEJ___</option>
+                    <option value="HoneyScript-SemiBold.ttf">HoneyScript-SemiBold</option>
+                    <option value="HOOKED.TTF">HOOKED</option>
+                    <option value="Hursheys.ttf">Hursheys</option>
+                    <option value="impact.ttf">impact</option>
+                    <option value="InversionzUnboxed.otf">InversionzUnboxed</option>
+                    <option value="IRON MAN OF WAR 002 NCV.ttf">IRON MAN OF WAR 002 NCV</option>
+                    <option value="jampact.ttf">jampact</option>
+                    <option value="Jedi.ttf">Jedi</option>
+                    <option value="KataBidalanBold.ttf">KataBidalanBold</option>
+                    <option value="KENYAN.TTF">KENYAN</option>
+                    <option value="KINGRICH.TTF">KINGRICH</option>
+                    <option value="kirsty__.ttf">kirsty__</option>
+                    <option value="Kitchenpolice.TTF">Kitchenpolice</option>
+                    <option value="KLEPTOCR.TTF">KLEPTOCR</option>
+                    <option value="Korner Deli NF.ttf">Korner Deli NF</option>
+                    <option value="kr1.ttf">kr1</option>
+                    <option value="KRAVET__.TTF">KRAVET__</option>
+                    <option value="krazynights.ttf">krazynights</option>
+                    <option value="land-v2.ttf">land-v2</option>
+                    <option value="Laser Rod.ttf">Laser Rod</option>
+                    <option value="later_on.ttf">later_on</option>
+                    <option value="LeelaUIb.ttf">LeelaUIb</option>
+                    <option value="LeviReBrushed.ttf">LeviReBrushed</option>
+                    <option value="libelsuit.ttf">libelsuit</option>
+                    <option value="light.otf">light</option>
+                    <option value="LithosPro-Black.otf">LithosPro-Black</option>
+                    <option value="Lobster_1.otf">Lobster_1</option>
+                    <option value="LOKICOLA.TTF">LOKICOLA</option>
+                    <option value="Long_Shot.ttf">Long_Shot</option>
+                    <option value="LOVEA___.TTF">LOVEA___</option>
+                    <option value="LT Oksana Bold.ttf">LT Oksana Bold</option>
+                    <option value="ltromatic bold.ttf">ltromatic bold</option>
+                    <option value="lucid.ttf">lucid</option>
+                    <option value="MAGNUM__.TTF">MAGNUM__</option>
+                    <option value="mangat.ttf">mangat</option>
+                    <option value="MankSans-Medium.ttf">MankSans-Medium</option>
+                    <option value="Mathematical Pi 1.ttf">Mathematical Pi 1</option>
+                    <option value="medium.ttf">medium</option>
+                    <option value="medra___.ttf">medra___</option>
+                    <option value="MikadoBold_DEMO.otf">MikadoBold_DEMO</option>
+                    <option value="Minecraftia-Regular.ttf">Minecraftia-Regular</option>
+                    <option value="Molot.otf">Molot</option>
+                    <option value="Monotoon KK.ttf">Monotoon KK</option>
+                    <option value="Moon Flower Bold.ttf">Moon Flower Bold</option>
+                    <option value="Moon Flower.ttf">Moon Flower</option>
+                    <option value="Moscoso.ttf">Moscoso</option>
+                    <option value="Mouser.ttf">Mouser</option>
+                    <option value="MyriadPro-BoldCond.otf">MyriadPro-BoldCond</option>
+                    <option value="Neou-Bold.otf">Neou-Bold</option>
+                    <option value="nerdproof.ttf">nerdproof</option>
+                    <option value="nevis.ttf">nevis</option>
+                    <option value="NFS_by_JLTV.ttf">NFS_by_JLTV</option>
+                    <option value="NHL Ducks.ttf">NHL Ducks</option>
+                    <option value="NICKODE1.TTF">NICKODE1</option>
+                    <option value="NIOBRG__.TTF">NIOBRG__</option>
+                    <option value="Nirmala.ttf">Nirmala</option>
+                    <option value="NirmalaB.ttf">NirmalaB</option>
+                    <option value="NOVABOLD.otf">NOVABOLD</option>
+                    <option value="novem___.ttf">novem___</option>
+                    <option value="ObelixProB-cyr.ttf">ObelixProB-cyr</option>
+                    <option value="OLIVERSB.TTF">OLIVERSB</option>
+                    <option value="OpenSans-Semibold.ttf">OpenSans-Semibold</option>
+                    <option value="OperationalAmplifier.ttf">OperationalAmplifier</option>
+                    <option value="Opificio_Bold.ttf">Opificio_Bold</option>
+                    <option value="Opificio.ttf">Opificio</option>
+                    <option value="overhead.ttf">overhead</option>
+                    <option value="Ozonelayer.ttf">Ozonelayer</option>
+                    <option value="Pacifico.ttf">Pacifico</option>
+                    <option value="pakenham.ttf">pakenham</option>
+                    <option value="panicbuttonbb_ital.ttf">panicbuttonbb_ital</option>
+                    <option value="panicbuttonbb_reg.ttf">panicbuttonbb_reg</option>
+                    <option value="penna.otf">penna</option>
+                    <option value="Permanent.ttf">Permanent</option>
+                    <option value="Phantomime.ttf">Phantomime</option>
+                    <option value="POLOBM__.TTF">POLOBM__</option>
+                    <option value="PoplarStd.otf">PoplarStd</option>
+                    <option value="PRICEDOW.TTF">PRICEDOW</option>
+                    <option value="pricedown bl_0.ttf">pricedown bl_0</option>
+                    <option value="PRIMER.ttf">PRIMER</option>
+                    <option value="PRIMERB.ttf">PRIMERB</option>
+                    <option value="Qiroff.ttf">Qiroff</option>
+                    <option value="Questrian.otf">Questrian</option>
+                    <option value="Quicksand_Bold.otf">Quicksand_Bold</option>
+                    <option value="RADIOSTA.TTF">RADIOSTA</option>
+                    <option value="RAPHAEL_.TTF">RAPHAEL_</option>
+                    <option value="ratio___.ttf">ratio___</option>
+                    <option value="RawengulkSans-094.otf">RawengulkSans-094</option>
+                    <option value="regular.otf">regular</option>
+                    <option value="REVOLUTION.ttf">REVOLUTION</option>
+                    <option value="Righteous-Regular.ttf">Righteous-Regular</option>
+                    <option value="ROCKYAOE.TTF">ROCKYAOE</option>
+                    <option value="ROTHWELL.TTF">ROTHWELL</option>
+                    <option value="SamdanCondensed.ttf">SamdanCondensed</option>
+                    <option value="Schluber.ttf">Schluber</option>
+                    <option value="segoeuib.ttf">segoeuib</option>
+                    <option value="SelznickNormal.ttf">SelznickNormal</option>
+                    <option value="seriously.ttf">seriously</option>
+                    <option value="SF Arch Rival Bold.ttf">SF Arch Rival Bold</option>
+                    <option value="SF Atarian System.ttf">SF Atarian System</option>
+                    <option value="SF Buttacup Lettering Bold Oblique.ttf">SF Buttacup Lettering Bold Oblique</option>
+                    <option value="SF Buttacup Lettering Bold.ttf">SF Buttacup Lettering Bold</option>
+                    <option value="SF Buttacup Lettering.ttf">SF Buttacup Lettering</option>
+                    <option value="SF Cartoonist Hand SC Bold Italic.ttf">SF Cartoonist Hand SC Bold Italic</option>
+                    <option value="SF Cartoonist Hand.ttf">SF Cartoonist Hand</option>
+                    <option value="SF Collegiate Solid.ttf">SF Collegiate Solid</option>
+                    <option value="SF Espresso Shack Bold Italic.ttf">SF Espresso Shack Bold Italic</option>
+                    <option value="SF Espresso Shack Bold.ttf">SF Espresso Shack Bold</option>
+                    <option value="SF Foxboro Script Bold.ttf">SF Foxboro Script Bold</option>
+                    <option value="SF Foxboro Script Extended Bold.ttf">SF Foxboro Script Extended Bold</option>
+                    <option value="SF Foxboro Script.ttf">SF Foxboro Script</option>
+                    <option value="SF Grunge Sans Bold Italic.ttf">SF Grunge Sans Bold Italic</option>
+                    <option value="SF Grunge Sans Bold.ttf">SF Grunge Sans Bold</option>
+                    <option value="SF Grunge Sans Italic.ttf">SF Grunge Sans Italic</option>
+                    <option value="SF Grunge Sans SC Italic.ttf">SF Grunge Sans SC Italic</option>
+                    <option value="SF Grunge Sans SC.ttf">SF Grunge Sans SC</option>
+                    <option value="SF Hollywood Hills Bold Italic.ttf">SF Hollywood Hills Bold Italic</option>
+                    <option value="SF Hollywood Hills Bold.ttf">SF Hollywood Hills Bold</option>
+                    <option value="SF Iron Gothic Bold Oblique.ttf">SF Iron Gothic Bold Oblique</option>
+                    <option value="SF Juggernaut Condensed Italic.ttf">SF Juggernaut Condensed Italic</option>
+                    <option value="SF Juggernaut Condensed.ttf">SF Juggernaut Condensed</option>
+                    <option value="SF Laundromatic Bold Oblique.ttf">SF Laundromatic Bold Oblique</option>
+                    <option value="SF Movie Poster Bold Italic.ttf">SF Movie Poster Bold Italic</option>
+                    <option value="SF Movie Poster Bold.ttf">SF Movie Poster Bold</option>
+                    <option value="SF New Republic.ttf">SF New Republic</option>
+                    <option value="SF Old Republic Bold.ttf">SF Old Republic Bold</option>
+                    <option value="SF Old Republic SC Bold Italic.ttf">SF Old Republic SC Bold Italic</option>
+                    <option value="SF Old Republic SC Bold.ttf">SF Old Republic SC Bold</option>
+                    <option value="SF Speakeasy Oblique.ttf">SF Speakeasy Oblique</option>
+                    <option value="SF Speakeasy.ttf">SF Speakeasy</option>
+                    <option value="SF Sports Night NS Upright.ttf">SF Sports Night NS Upright</option>
+                    <option value="SF Sports Night NS.ttf">SF Sports Night NS</option>
+                    <option value="SF Toontime B Italic.ttf">SF Toontime B Italic</option>
+                    <option value="SF Toontime B.ttf">SF Toontime B</option>
+                    <option value="SF Willamette Bold Italic.ttf">SF Willamette Bold Italic</option>
+                    <option value="SF Willamette Bold.ttf">SF Willamette Bold</option>
+                    <option value="SF Willamette.ttf">SF Willamette</option>
+                    <option value="SHLOP.TTF">SHLOP</option>
+                    <option value="SkarpaLt.ttf">SkarpaLt</option>
+                    <option value="slender.ttf">slender</option>
+                    <option value="Slim Extreme.ttf">Slim Extreme</option>
+                    <option value="Slimania Bold.ttf">Slimania Bold</option>
+                    <option value="Snowstorm Kraft_0.ttf">Snowstorm Kraft_0</option>
+                    <option value="Snowstorm Kraft.ttf">Snowstorm Kraft</option>
+                    <option value="Something Strange.ttf">Something Strange</option>
+                    <option value="SourceSansPro-Black.otf">SourceSansPro-Black</option>
+                    <option value="SOVIET4.TTF">SOVIET4</option>
+                    <option value="spacefr.ttf">spacefr</option>
+                    <option value="spacefri.ttf">spacefri</option>
+                    <option value="Sparkler-demo.ttf">Sparkler-demo</option>
+                    <option value="SPEEM___.TTF">SPEEM___</option>
+                    <option value="Square.ttf">Square</option>
+                    <option value="SQUEALER.TTF">SQUEALER</option>
+                    <option value="squitcher.ttf">squitcher</option>
+                    <option value="srgt6pack.ttf">srgt6pack</option>
+                    <option value="steelfib.ttf">steelfib</option>
+                    <option value="steelfis.ttf">steelfis</option>
+                    <option value="stentiga.ttf">stentiga</option>
+                    <option value="STEREOHI.TTF">STEREOHI</option>
+                    <option value="Streamster.ttf">Streamster</option>
+                    <option value="tahoma.ttf">tahoma</option>
+                    <option value="TalkingToTheMoon.ttf">TalkingToTheMoon</option>
+                    <option value="Tall Film Fine.ttf">Tall Film Fine</option>
+                    <option value="Tall Film Oblique.ttf">Tall Film Oblique</option>
+                    <option value="Tall Film.ttf">Tall Film</option>
+                    <option value="Tall Films Expanded Oblique.ttf">Tall Films Expanded Oblique</option>
+                    <option value="Tall Films Expanded.ttf">Tall Films Expanded</option>
+                    <option value="Tall Films Fine Oblique.ttf">Tall Films Fine Oblique</option>
+                    <option value="talldark.ttf">talldark</option>
+                    <option value="TAPEWORM.TTF">TAPEWORM</option>
+                    <option value="telegrafico_by_ficod.ttf">telegrafico_by_ficod</option>
+                    <option value="TequilaSunrise-Regular.ttf">TequilaSunrise-Regular</option>
+                    <option value="thin.ttf">thin</option>
+                    <option value="Timeline.ttf">Timeline</option>
+                    <option value="TOMMY__.TTF">TOMMY__</option>
+                    <option value="True Lies.ttf">True Lies</option>
+                    <option value="tussle.ttf">tussle</option>
+                    <option value="Ubuntu-B.ttf">Ubuntu-B</option>
+                    <option value="UltraCondensedSansSerif.ttf">UltraCondensedSansSerif</option>
+                    <option value="UNICORN.TTF">UNICORN</option>
+                    <option value="Unrealised.ttf">Unrealised</option>
+                    <option value="Untidy Italic Skrawl.ttf">Untidy Italic Skrawl</option>
+                    <option value="updik___.ttf">updik___</option>
+                    <option value="upheavtt.ttf">upheavtt</option>
+                    <option value="Vanadine Bold.ttf">Vanadine Bold</option>
+                    <option value="vantage.ttf">vantage</option>
+                    <option value="Vegetable.ttf">Vegetable</option>
+                    <option value="Vegur-B 0.602.otf">Vegur-B 0.602</option>
+                    <option value="Vegur-L 0602.otf">Vegur-L 0602</option>
+                    <option value="verdana.ttf">verdana</option>
+                    <option value="verdanab.ttf">verdanab</option>
+                    <option value="vikingsquadboldital.ttf">vikingsquadboldital</option>
+                    <option value="vikingsquadcond.ttf">vikingsquadcond</option>
+                    <option value="VIOLATIO.TTF">VIOLATIO</option>
+                    <option value="visitor2.ttf">visitor2</option>
+                    <option value="viva01.ttf">viva01</option>
+                    <option value="waltograph42.otf">waltograph42</option>
+                    <option value="waltographUI.ttf">waltographUI</option>
+                    <option value="Waukegan LDO Black Oblique.ttf">Waukegan LDO Black Oblique</option>
+                    <option value="Waukegan LDO Black.ttf">Waukegan LDO Black</option>
+                    <option value="weaver.ttf">weaver</option>
+                    <option value="webster.ttf">webster</option>
+                    <option value="WELTRON2.TTF">WELTRON2</option>
+                    <option value="WELTSP__.TTF">WELTSP__</option>
+                    <option value="WETPM___.TTF">WETPM___</option>
+                    <option value="Wolf in the City Light.ttf">Wolf in the City Light</option>
+                    <option value="Write2.ttf">Write2</option>
+                    <option value="wunderbar.ttf">wunderbar</option>
+                    <option value="wyldb.ttf">wyldb</option>
+                    <option value="wyldt.ttf">wyldt</option>
+                    <option value="XO.TTF">XO</option>
+                    <option value="YanoneKaffeesatz-Bold.ttf">YanoneKaffeesatz-Bold</option>
+                    <option value="YanoneKaffeesatz-Light.ttf">YanoneKaffeesatz-Light</option>
+                    <option value="YanoneKaffeesatz-Regular.ttf">YanoneKaffeesatz-Regular</option>
+                    <option value="YanoneKaffeesatz-Thin.ttf">YanoneKaffeesatz-Thin</option>
+                    <option value="YARDSALE.TTF">YARDSALE</option>
+                    <option value="Yearsupplyoffairycakes.ttf">Yearsupplyoffairycakes</option>
+                    <option value="Yellowc.ttf">Yellowc</option>
+                    <option value="yesterdaysmeal.ttf">yesterdaysmeal</option>
+                    <option value="yonder.ttf">yonder</option>
+                    <option value="yukari.ttf">yukari</option>
+                    <option value="zeldadxt.ttf">zeldadxt</option>
+                    <option value="zephyrea.ttf">zephyrea</option>
+                    <option value="zephyreg.ttf">zephyreg</option>
+                    <option value="ZITZ____.TTF">ZITZ____</option>
+                    <option value="ZUDJI___.TTF">ZUDJI___</option>        
+                </select>
+                <br><br>
+                <button class="submit" type="submit">Submit Font</button>
+            </form>
+            <br>
+            <h5>Current Font Style: {{ font_style }}</h5>
+        </div>
+     </div>
+    <div class="column">
+        <div class="bg3img">
+            <br><br><br>
+            <h2>Select a Font Color</h2>
+            <h5>Use a color name or color code</h5>
+            <form action="/font_color" method="POST">
+                <input type="text" name="Color_Text" class="search-field tags" 
+                placeholder="Color Name">
+                <br><br> 
+                <button class="submit" type="submit">Submit Font Color</button>
+            </form>
+            <br>
+            <h5>Current Font Color: {{ font_color }}</h5>
+        </div>
+    </div>
+</div>
+
+<style>
+    .font_colors {
+        position: absolute;
+        top: 500px;
+        left: 400px;
+        color:white;
+        text-align:center;
+        }
+</style>
+
+<div class="font_colors">
+    <h1>Popular Font Colors</h1>
+    <br>
+<img src= {{ url_for('static', filename='Background_Images/Major _Font_Colors.jpg') }} width="700" height="500">
+    <br><br><br>
+    <h1>Full Font Color Selection</</h1>
+</div>
+
+<style>
+        iframe {
+            position: absolute;
+            width: 1200px;
+            height: 700px;
+            top: 1200px;
+            left:175px;
+            border:5px solid rgba(0, 0, 0, 0.6);
+    }
+ </style>
+
+<div>
+        <br><br
+        <body>   
+            <iframe src="https://www.computerhope.com/htmcolor.htm"></iframe>
+        </body>
+        </html>
+        <br><br><br> <br>
+ </div>
+{% endblock %}

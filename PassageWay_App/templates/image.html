@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+        <script type="text/javascript">
+          window._mNHandle = window._mNHandle || {};
+          window._mNHandle.queue = window._mNHandle.queue || [];
+          medianet_versionId = "3121199";
+         </script>
+      <script src="https://contextual.media.net/dmedianet.js?cid=8CU3EK733" async="async"></script>
+</head>
+
+<style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+</style>
+
+<body style="background-color: #2B547E;"></body>
+
+<div id="530942823">
+    <script type="text/javascript">
+        try {
+            window._mNHandle.queue.push(function (){
+                window._mNDetails.loadTag("530942823", "970x90", "530942823");
+            });
+        }
+        catch (error) {}
+    </script>
+</div>
+
+<div>
+    <br><br>
+    <img src= {{ image_file }} class="img">
+    <br><br>
+</div>
+
+<style>
+.wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      color: white;
+      text-align:center;
+    }
+    * {box-sizing: border-box;}
+    
+.wrapper-item {
+      background-color: rgba(43, 84, 126, 1);
+    }
+</style>
+
+<div class="wrapper">
+    <div class ="wrapper-item" style="background-color:#526DAA;
+            border:3px solid rgba(0, 0, 0, 0.6);">
+        <br>
+        <form action="/coordinates" method="POST">
+            <br>
+            <h3>Adjust Text Placement</h3>
+            <p>Insert Pixel Coordinates</p>
+            <p>Initially positioned at (250, 250)</p>
+            <input type="text" name="X_Coordinate" class="search-field tags"
+            placeholder="x">
+        
+            <input type="text" name="Y_Coordinate" class="search-field tags"
+            placeholder="y">
+            <br><br>
+            <button class="submit" type="submit">Submit</button>  
+        </form>
+        <br>
+        <h5>Coordinates: {{ coordinates }} </h5>
+     </div>
+    <div class ="wrapper-item" style="background-color:#344F8C;
+     border:3px solid rgba(0, 0, 0, 0.6);">
+        <br>
+        <h3>Insert Quote Here</h3>
+        <p>Write or Paste Text</p>
+        <form action="/quote" method="POST">
+            <textarea name="Quote_Text" rows="10" cols="60"></textarea>
+            <br><br>
+            <input type="submit">
+            </form>
+            <br>
+        </form>
+        <h5>Quote: {{ quote_text }}</h5>
+        <br>
+     </div>
+    <div class ="wrapper-item" style="background-color:#203B78;
+     border:3px solid rgba(0, 0, 0, 0.6);">
+        <br>
+        <form action="/font_size" method="POST">
+            <h3>Select Font size</h3>
+            <br>
+            <input type="text" name="Font_size" class="search-field tags" 
+            placeholder="Font Size">
+            <br><br>
+            <button class="submit" type="submit">Submit</button>  
+        </form>
+        <br>
+        <h5>Font Size: {{ font_size }}</h5> 
+        <br>
+        <h1 style="color:white;">Create Image</h1> 
+        <p>Images can be Adjusted and Recreated</p>
+        <p>Right click on image to download</p>
+        <form action="/styled_image" method="POST">
+        <input type="submit" value="Create">
+        </form>
+        <br> 
+     </div>
+ </div>
+
+ <br><br><br><br>
+{% endblock %}
