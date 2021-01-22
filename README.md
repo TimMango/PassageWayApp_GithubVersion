@@ -6,8 +6,8 @@ This version uses SQLite (I have others using PostGres).  The application is des
 
 Fonts file was too large to upload to Github.
 
-![]('https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo1.png')
-![]('https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo2.png')
+![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo1.png)
+![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo2.png)
 ![]('https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo3.png')
 ![]('https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo4.png')
 ![]('https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo5.png')
