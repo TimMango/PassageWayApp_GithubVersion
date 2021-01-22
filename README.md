@@ -1,6 +1,6 @@
 # PassageWay_Github_Version
 
-Code for picture manipulating web application I created named PassageWay.  Application used to be hosted at Passageway.com but has been taken down due to AWS fees.  Application can still run locally using flask run.
+Code for picture manipulating web application I created named PassageWay.  Application used to be hosted at Passageway-app.com but has been taken down due to AWS fees.  Application can still run locally using flask run.
 
 This version uses SQLite (I have others using PostGres).  The application is designed to run with minimal cost on AWS Elastic Beanstalk.  Application can be deployed with docker or uploaded directley to AWS.
 
