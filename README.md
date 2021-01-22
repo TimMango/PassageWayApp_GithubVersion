@@ -6,7 +6,7 @@ This version uses SQLite (I have other versions using PostGres).  The applicatio
 
 Fonts file was too large to upload to Github,but a smaller folder containing 32 fonts (down from 500) is included.  The file needs a Flikr API key and a little bit of adjustment but runs well locally and moderately well as a cloud application.
 
-Screenshots of the application and an edited photo example are shown below.
+Screenshots of the application and a finished product example are shown below.
 
 ![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo1.png)
 ![](https://github.com/TimMango/PassageWay_Github_Version/blob/main/Website_Photos/photo2.png)
